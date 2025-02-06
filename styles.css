@@ -1094,7 +1094,7 @@ nav ul li a {
 
   
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 729px) {
   .menu-icon {
     display: block;
   }
