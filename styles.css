@@ -4,38 +4,6 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
   }
-  /*
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #cfa723;
-    color: white;
-  }
-  
-  header .logo h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-*/
 
 
   /* Header Section */
@@ -44,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #cfa723;
+  background-color: #964B00;
   color: white;
 }
 
@@ -128,6 +96,36 @@ nav ul li a {
   }
 
 
+/* Hero Section Animation */
+.hero-content h2, .hero-content p, .hero-content .cta-button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero-content h2 {
+  animation-delay: 0.5s;
+}
+
+.hero-content p {
+  animation-delay: 1s;
+}
+
+.hero-content .cta-button {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  
+
+
 /* Message from the Director Section */
 .director-message {
   padding: 50px 20px;
@@ -199,7 +197,7 @@ nav ul li a {
 
 .mission, .vision{
   flex: 1;
-  background-color: #be9114;
+  background-color: #D89F55;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -212,28 +210,10 @@ nav ul li a {
 }
 
 .mission p, .vision p {
-  font-size: 16px;
+  font-size: 18px;
   color: #555;
 }
 
-/* Our History */
-.history {
-  background-color: #be9114;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 50px;
-}
-
-.history h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-.history p {
-  font-size: 16px;
-  color: #555;
-}
 
 /* Our Team */
 .our-team {
@@ -253,7 +233,7 @@ nav ul li a {
 }
 
 .team-member {
-  background-color: #be9114;
+  background-color: #D89F55;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -295,7 +275,7 @@ nav ul li a {
 }
 
 .facility-item {
-  background-color: #be9114;
+  background-color: #D89F55;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -333,97 +313,6 @@ nav ul li a {
 
 
 
-/* Programs Offered Section */
-.programs {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.programs h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-.programs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.program-item {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.program-item i {
-  font-size: 48px;
-  color: #be9114;
-  margin-bottom: 15px;
-}
-
-.program-item h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.program-item p {
-  font-size: 16px;
-  color: #555;
-}
-
-/* Why Choose Us Section */
-.why-choose-us {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #fff;
-}
-
-.why-choose-us h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.feature-item {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.feature-item i {
-  font-size: 48px;
-  color: #be9114;
-  margin-bottom: 15px;
-}
-
-.feature-item h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.feature-item p {
-  font-size: 16px;
-  color: #555;
-}
-
-
-
-
 /* Testimonials Section */
 .testimonial-item img {
   width: 100px;
@@ -450,6 +339,10 @@ nav ul li a {
   font-size: 20px;
   color: #be9114;
 }
+
+
+
+
 
 /* Gallery Section */
 .gallery {
@@ -491,7 +384,7 @@ nav ul li a {
 /* Programs Offered Section */
 .programs {
   padding: 50px 20px;
-  background-color: #f9f9f9;
+  background-color: #D89F55;
   text-align: center;
 }
 
@@ -557,7 +450,7 @@ nav ul li a {
 }
 
 .feature-item {
-  background-color: #be9114;
+  background-color: #D89F55;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -600,7 +493,7 @@ nav ul li a {
 }
 
 .testimonial-item {
-  background-color: #be9114;
+  background-color: #D89F55;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -621,7 +514,7 @@ nav ul li a {
 .cta {
   padding: 50px 20px;
   text-align: center;
-  background-color: #be9114;
+  background-color: #D89F55;
   color: white;
 }
 
@@ -642,6 +535,25 @@ nav ul li a {
 
 .cta .cta-button:hover {
   background-color: #f1f1f1;
+}
+
+
+
+/* Call to Action Button Animation */
+.cta-button {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
@@ -695,38 +607,6 @@ nav ul li a {
   font-size: 16px;
 }
 
-
-
-  /* About Us Section *
-.about {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .about-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .about-content h3 {
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .about-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-  }
-
-  *?
 
 /* ----about Message from director---- */
 #about{
@@ -797,9 +677,58 @@ nav ul li a {
 }
 
 
+
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #D89F55;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Ensure the header is the positioning context */
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header .menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+header .nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header .nav-menu ul li {
+  margin-left: 20px;
+}
+
+header .nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 /* Admissions Section */
 .admissions {
-  padding: 50px 20px;
+  padding: 20px;
   background-color: #FFFDD0;
   text-align: center;
 }
@@ -811,19 +740,25 @@ nav ul li a {
 }
 
 .admissions-content h2 {
-  font-size: 36px;
+  font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .admissions-content h3 {
-  font-size: 24px;
-  margin-top: 30px;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.admissions-content h4 {
+  font-size: 18px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
 .admissions-content p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #555;
 }
@@ -831,13 +766,19 @@ nav ul li a {
 .admissions-content ol,
 .admissions-content ul {
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
 }
 
 .admissions-content ol li,
 .admissions-content ul li {
   margin-bottom: 10px;
+}
+
+/* Responsive Tables */
+.table-responsive {
+  overflow-x: auto;
+  margin-bottom: 20px;
 }
 
 .admissions-content table {
@@ -852,27 +793,129 @@ nav ul li a {
   padding: 10px;
   border: 1px solid #ccc;
   text-align: center;
+  font-size: 14px;
 }
 
 .admissions-content table th {
-  background-color: #be9114;
+  background-color: #D89F55;
   color: white;
 }
 
+/* CTA Buttons */
 .admissions-content .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #be9114;
+  background-color: #D89F55;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .admissions-content .cta-button:hover {
-  background-color: #be9114;
+  background-color: #a67c10;
 }
+
+/* Footer */
+footer {
+  background-color: #be9114;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .menu-icon {
+    display: block;
+  }
+
+  header .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 150px; /* Set a fixed width for the menu */
+    background-color: #D89F55;
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start off-screen to the right */
+    height: 100vh;
+    transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
+    z-index: 1000; /* Ensure the menu is above other content */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+
+  header .nav-menu.active {
+    display: flex;
+    right: 0; /* Slide in from the right */
+  }
+
+  header .nav-menu ul {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px; /* Space for the close icon */
+  }
+
+  header .nav-menu ul li {
+    margin: 15px 0;
+    text-align: left; /* Align menu items to the left */
+  }
+
+  header .nav-menu ul li a {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  header .nav-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+    border-radius: 5px;
+  }
+
+  /* Close Icon (X) *
+  .nav-menu .close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+    */
+
+  .admissions-content h2 {
+    font-size: 24px;
+  }
+
+  .admissions-content h3 {
+    font-size: 20px;
+  }
+
+  .admissions-content h4 {
+    font-size: 18px;
+  }
+
+  .admissions-content p,
+  .admissions-content ol,
+  .admissions-content ul {
+    font-size: 14px;
+  }
+
+  .admissions-content table th,
+  .admissions-content table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+
+
+
 
 
 /* Gallery Section */
@@ -975,7 +1018,7 @@ nav ul li a {
 }
 
 .social-icons a:hover {
-  color: #b19b3a;
+  color: #D89F55;
 }
 
 .contact-right {
@@ -1001,7 +1044,7 @@ nav ul li a {
 
 .contact-right .btn2 {
   padding: 10px 20px;
-  background-color: #b19b3a;
+  background-color: #964B00;
   color: white;
   border: none;
   border-radius: 5px;
@@ -1088,13 +1131,13 @@ nav ul li a {
   footer {
     text-align: center;
     padding: 20px;
-    background-color: #820000;
+    background-color: #D89F55;
     color: white;
   }
 
   
 /* Responsive Design */
-@media (max-width: 729px) {
+@media (max-width: 720px) {
   .menu-icon {
     display: block;
   }
@@ -1105,7 +1148,7 @@ nav ul li a {
     right: -100%;
     height: 100vh;
     width: 150px;
-    background-color: #e08543;
+    background-color: #D89F55;
     transition: right 0.3s ease;
   }
 
